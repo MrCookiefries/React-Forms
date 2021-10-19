@@ -1,0 +1,38 @@
+@keyframes reveal-down {
+    from {transform: scaleY(0);}
+    to {transform: scaleY(1);}
+}
+
+.Todo {
+    display: flex;
+    padding: 0.25em;
+    margin: 1.5rem 0;
+    transform-origin: top;
+    animation: reveal-down 400ms ease-in;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    p {
+        color: red;
+        font-weight: 500;
+        font-size: 1.25em;
+        transition: color 400ms ease-in-out;
+
+        &.done {
+            color: green;
+        }
+    }
+
+    button {
+        padding: 0.25em;
+        margin-left: 1rem;
+        transition: transform 400ms ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}
