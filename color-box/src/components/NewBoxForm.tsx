@@ -20,7 +20,7 @@ const NewBoxForm = ({addBox}: {addBox: Function}) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="NewBoxForm" onSubmit={handleSubmit}>
             <label>
                 Background Color
                 <input
